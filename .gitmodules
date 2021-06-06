@@ -4,6 +4,6 @@
 [submodule "SFML"]
 	path = lib/SFML/SFML
 	url = https://github.com/SFML/SFML.git
-[submodule "tinyfiledialogs"]
-	path = lib/TinyFileDialogs/tinyfiledialogs
+[submodule "lib/TinyFileDialogs/lib/TinyFileDialogs/tinyfiledialogs"]
+	path = lib/TinyFileDialogs/lib/TinyFileDialogs/tinyfiledialogs
 	url = https://github.com/native-toolkit/tinyfiledialogs.git

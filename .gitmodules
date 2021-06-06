@@ -1,0 +1,9 @@
+[submodule "OCL-VideoProcessingLibrary"]
+	path = lib/OCL-VideProcessingLibrary/OCL-VideProcessingLibrary
+	url = https://github.com/OutOfContext-Developers/OCL-VideoProcessingLibrary.git
+[submodule "SFML"]
+	path = lib/SFML/SFML
+	url = https://github.com/SFML/SFML.git
+[submodule "tinyfiledialogs"]
+	path = lib/TinyFileDialogs/tinyfiledialogs
+	url = https://github.com/native-toolkit/tinyfiledialogs.git

@@ -26,13 +26,18 @@ int main()
         0 // forbid multiple selections
         );
 
+    if(url == NULL) {
+      std::cerr << "No File selected" << '\n';
+      return 0;
+    }
+
     // Objects to extract video and audio frames
     VideoFrame *videoframe = new VideoFrame(url);
     AudioFrame *audioframe = new AudioFrame(url);
 
 
     // Create the main window
-    sf::RenderWindow window(sf::VideoMode(videoframe->width+100, videoframe->height+100), "SFML window");
+    sf::RenderWindow window(sf::VideoMode(videoframe->width, videoframe->height), "SFML window");
 
     // Create a texture to display video
     sf::Texture texture;

@@ -17,10 +17,9 @@ target_link_libraries(OCL-VPL INTERFACE
 
 target_include_directories(OCL-VPL INTERFACE ${OCL-VideoProcessingLibrary_INCLUDE_DIRS})
 
-# Find and add FFMPEG as an external dependancy
+# Find and add FFMPEG as an external dependency
 # Since OCL-VPL requires FFMPEG as runtime library
 find_package(PkgConfig REQUIRED)
-set(ENV{PKG_CONFIG_PATH} "$ENV{PKG_CONFIG_PATH}:./install")
 pkg_check_modules(AVCODEC     REQUIRED IMPORTED_TARGET libavcodec)
 pkg_check_modules(AVFORMAT    REQUIRED IMPORTED_TARGET libavformat)
 pkg_check_modules(AVFILTER    REQUIRED IMPORTED_TARGET libavfilter)

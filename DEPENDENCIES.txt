@@ -1,3 +1,2 @@
 CMAKE
-MAKE
-./configure mingw (windows)
+FFMPEG

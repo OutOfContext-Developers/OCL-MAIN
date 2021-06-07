@@ -2,19 +2,20 @@ cmake_minimum_required(VERSION 3.16)
 project(OCL-VideoProcessingLibrary)
 
 find_package(OCL-VideoProcessingLibrary REQUIRED OCL-VideoProcessingLibrary PATHS install)
-include_directories(${OCL-VideoProcessingLibrary_INCLUDE_DIRS})
 
-include_directories(install/include/)
 
 if(NOT OCL-VideProcessingLibrary_FOUND)
   file(GLOB OCL-VideProcessingLibrary install/lib/*.a)
+  set(OCL-VideoProcessingLibrary_INCLUDE_DIRS install/include)
 endif()
+
 
 add_library(OCL-VPL INTERFACE IMPORTED GLOBAL)
 target_link_libraries(OCL-VPL INTERFACE
   OCL-VideoProcessingLibrary
 )
 
+target_include_directories(OCL-VPL INTERFACE ${OCL-VideoProcessingLibrary_INCLUDE_DIRS})
 
 # Find and add FFMPEG as an external dependancy
 # Since OCL-VPL requires FFMPEG as runtime library

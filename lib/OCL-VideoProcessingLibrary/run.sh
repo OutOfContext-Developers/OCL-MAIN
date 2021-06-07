@@ -6,7 +6,7 @@ then
     echo "Assuming ffmpeg and OCL-VPL is installed"
 else
   # Run the script to install ffmpeg
-  cd OCL-VideoProcessingLibrary/lib/FFMPEG
+  cd ./OCL-VideoProcessingLibrary/lib/FFMPEG
   chmod +x ./run.sh
   ./run.sh
   cd ../../../

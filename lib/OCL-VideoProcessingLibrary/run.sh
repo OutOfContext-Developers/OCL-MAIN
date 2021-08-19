@@ -1,5 +1,6 @@
+echo "INSTALLING REQUIRED PACKAGES"
+sudo apt install libfreetype-dev libx11-dev libxrandr-dev libudev-dev libopengl-dev libflac-dev libogg-dev libvorbis-dev libopenal-dev libxcursor-dev
 echo "INSTALLING ffmpeg"
-
 if [ -d "./install" ]
 then
     echo "Directory install exists."
